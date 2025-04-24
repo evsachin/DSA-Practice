@@ -1,0 +1,60 @@
+# === Java ===
+*.class
+*.jar
+*.war
+*.ear
+*.log
+
+# === Maven / Gradle Build Directories ===
+/target/
+/build/
+
+# === IntelliJ IDEA ===
+.idea/
+*.iml
+*.iws
+out/
+
+# === Eclipse ===
+.project
+.classpath
+.settings/
+bin/
+
+# === VS Code ===
+.vscode/
+
+# === OS Files ===
+.DS_Store
+Thumbs.db
+
+# === Logs ===
+*.log
+
+# === Spring Boot Specific ===
+/.env
+/.env.*
+application.properties
+application.yml
+application-*.properties
+application-*.yml
+
+# === Test Output ===
+/test-output/
+
+# === Temporary Files ===
+*.tmp
+*.swp
+*.bak
+
+# === Coverage Reports ===
+/coverage/
+/jacoco.exec
+
+# === Dependency Caches ===
+/.mvn/
+!/.mvn/wrapper/maven-wrapper.jar
+
+# === Others ===
+*.db
+*.sqlite
