@@ -1,0 +1,29 @@
+package com.inheritance;
+
+
+public class LearnInheritance {
+
+}
+
+
+
+// multi level inheritance
+
+class Car{
+	
+}
+
+class Maruti extends Car{
+	
+}
+
+class suzuki extends Maruti{
+	
+}
+
+// hierachichal inheritance
+
+class  
+// hybrid inheritance
+
+

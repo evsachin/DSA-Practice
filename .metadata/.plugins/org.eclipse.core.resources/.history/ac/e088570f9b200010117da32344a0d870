@@ -1,0 +1,12 @@
+package dsa;
+
+public class CountNumberOfWordsInAString {
+	
+	public static void main(String[] args) {
+		
+		String words = "One two three four";
+		int countWords = words.split("four").length;
+		System.out.println("coun wrords = "+ countWords);
+	}
+
+}

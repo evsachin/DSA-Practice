@@ -1,0 +1,42 @@
+package com.sachin.springboot_crud.controller;
+
+
+
+@RestController
+@RequestMapping("/employees")
+public class EmployeeController {
+
+    @Autowired
+    private EmployeeService employeeService;
+
+    // 1. Get all employees (GET /employees)
+    @GetMapping
+    public List<Employee> getAllEmployees() {
+        return employeeService.getAllEmployees();
+    }
+
+    // 2. Get an employee by ID (GET /employees/{id})
+    @GetMapping("/{id}")
+    public Employee getEmployee(@PathVariable Long id) {
+        return employeeService.getEmployeeById(id);
+    }
+
+    // 3. Create a new employee (POST /employees)
+    @PostMapping
+    public Employee createEmployee(@RequestBody Employee employee) {
+        return employeeService.saveEmployee(employee);
+    }
+
+    // 4. Update an existing employee (PUT /employees/{id})
+    @PutMapping("/{id}")
+    public Employee updateEmployee(@PathVariable Long id, @RequestBody Employee employee) {
+        return employeeService.updateEmployee(id, employee);
+    }
+
+    // 5. Delete an employee (DELETE /employees/{id})
+    @DeleteMapping("/{id}")
+    public String deleteEmployee(@PathVariable Long id) {
+        employeeService.deleteEmployee(id);
+        return "Employee deleted successfully!";
+    }
+}

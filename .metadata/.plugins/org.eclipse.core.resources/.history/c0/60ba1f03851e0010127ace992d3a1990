@@ -1,0 +1,29 @@
+package evision;
+
+public class PrintAllAlphabets {
+	public static void main(String[] args) {
+		char ch;
+		for(ch = 'a'; ch <= 'z'; ch++) {
+			System.out.print(ch+", ");
+		}
+		System.out.println();
+		for(ch = 'z'; ch >= 'a'; ch--) {
+			System.out.print(ch + ", ");
+		}
+		
+		System.out.println();
+		
+		//for each loop
+		int nums[]  = {1,2,3,4,5,6,7,8,9,10};
+		
+		System.err.println("Numbers = ");
+		for(int i: nums) {
+			System.out.println(i* 2);
+		}
+		
+		String languages[] = {"Sachin","akash","Vipin", "Nikhil","Rahul"};
+		for(String names: languages) {
+			System.out.print(names+" ");
+		}
+	}
+}

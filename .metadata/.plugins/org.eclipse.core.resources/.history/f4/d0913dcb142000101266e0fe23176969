@@ -1,0 +1,28 @@
+package com.micro.order.order_service.controller;
+
+
+
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
+
+import com.micro.order.order_service.model.Product;
+
+@RestController
+@RequestMapping("/orders")
+public class OrderController {
+
+    @Autowired
+    private RestTemplate restTemplate;
+
+    @GetMapping("/place/{productId}")
+    public String placeOrder(@PathVariable String productId) {
+        Product product = restTemplate.getForObject("http://localhost:8081/products/" + productId, Product.class);
+        return "Order placed for: " + product.getName() + " at Rs. " + product.getPrice();
+    }
+}
+

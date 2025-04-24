@@ -1,0 +1,27 @@
+package dsa;
+
+public class JavaStringMethods {
+	public static void main(String[] args) {
+		
+		String str = "Hello Sachin Welcome to Java";
+		
+//		length()
+		System.out.println(str.length());
+		System.out.println(str.charAt(str.length()-1));
+		
+//		charAt()
+		for(int i = str.length()-1; i> 0 ; i--) {
+			System.out.print(str.charAt(i));
+		}
+		System.out.println();
+		
+//		substring
+		System.out.println(str.substring(20));
+		System.out.println(str.substring(2,5));
+		
+//		contains()
+		System.out.println(str.contains("Sachn"));
+		
+		
+	}
+}

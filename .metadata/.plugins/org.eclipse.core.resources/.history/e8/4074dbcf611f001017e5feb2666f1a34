@@ -1,0 +1,9 @@
+package com.inheritance;
+
+public class HybridInheritance {
+
+}
+
+class Color {
+	
+}

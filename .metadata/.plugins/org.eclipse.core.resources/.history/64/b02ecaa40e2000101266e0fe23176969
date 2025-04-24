@@ -1,0 +1,5 @@
+package com.micro.order.order_service.model;
+
+public class Product {
+
+}

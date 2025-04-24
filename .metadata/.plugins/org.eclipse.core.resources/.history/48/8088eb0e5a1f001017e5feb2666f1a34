@@ -1,0 +1,9 @@
+package com.student;
+
+public class StudentInfo {
+	
+	public void studentDetails() {
+		
+	}
+
+}

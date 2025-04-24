@@ -1,0 +1,24 @@
+package evision;
+
+import java.util.Scanner;
+
+public class AddTwoNumbers {
+	
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter two numbers = ");
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		System.out.println("Sum is = "+addTwoNumbers(a,b));
+		
+		
+	}
+
+	private static int addTwoNumbers(int a, int b) {
+		// TODO Auto-generated method stub
+		return a + b;
+	}
+
+	
+}

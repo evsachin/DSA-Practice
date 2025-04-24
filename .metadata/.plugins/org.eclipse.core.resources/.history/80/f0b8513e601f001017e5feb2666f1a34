@@ -1,0 +1,13 @@
+package com.inheritance;
+
+public class HierarchicalInheritance {
+
+}
+
+class Animal {
+	
+}
+
+class Dog extends Animal{
+	
+}

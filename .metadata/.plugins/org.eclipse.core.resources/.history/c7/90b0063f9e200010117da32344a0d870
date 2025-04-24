@@ -1,0 +1,17 @@
+package dsa;
+
+public class ConvertStringToArray {
+	
+	public static void main(String[] args) {
+		String name = "Sachin";
+		char [] charArray;
+		System.out.println(charArray = name.toCharArray());
+		
+		System.out.println(charArray.length);
+		
+		int i = 0;
+		while(i != 0 ) {
+			
+		}
+	}
+}

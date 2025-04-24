@@ -1,0 +1,27 @@
+package com.inheritance;
+
+public class MutiLevelInheritance {
+		
+		Son obj = new Son();
+		
+}
+
+class GrandFather {
+	
+	protected void displayGrandFather() {
+		System.out.println("GrandFather ...");
+	}
+	
+}
+
+class Father extends GrandFather{
+	protected void displayFather() {
+		System.out.println("Father ...");
+	}
+}
+
+class Son extends Father{
+	protected void displayFather() {
+		System.out.println("Son ...");
+	}
+}

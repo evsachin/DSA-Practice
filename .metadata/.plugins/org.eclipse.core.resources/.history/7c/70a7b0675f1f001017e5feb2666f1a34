@@ -1,0 +1,19 @@
+package com.inheritance;
+
+public class SingleInheritance {
+
+}
+
+//single inheritance
+class Animal {
+
+	void display() {
+
+		System.out.println("Animal");
+	}
+
+}
+
+class Dog extends Animal {
+	
+}

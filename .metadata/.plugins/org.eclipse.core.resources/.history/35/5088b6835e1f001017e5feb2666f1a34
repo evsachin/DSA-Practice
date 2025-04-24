@@ -1,0 +1,15 @@
+package com.inheritance;
+
+public class SingleInheritance {
+	
+	
+}
+
+//single inheritance
+class Animal{
+	
+}
+
+class Dog extends Animal{
+	
+}

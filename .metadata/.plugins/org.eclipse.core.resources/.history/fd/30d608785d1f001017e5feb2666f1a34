@@ -1,0 +1,26 @@
+package com.inheritance;
+
+
+public class LearnInheritance {
+
+}
+
+
+// single inheritance
+class Animal{
+	
+}
+
+class Dog extends Animal{
+	
+}
+
+// mulilavel inheritance
+
+class Car{
+	
+}
+
+class Maruti extends Car{
+	
+}

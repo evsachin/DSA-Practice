@@ -1,0 +1,13 @@
+package dsa;
+
+public class ReverseAString {
+	
+	public static void main(String[] args) {
+		
+		String name = "Sachin";
+		
+		String revStr = "";
+		
+		System.out.println(name.);
+	}
+}

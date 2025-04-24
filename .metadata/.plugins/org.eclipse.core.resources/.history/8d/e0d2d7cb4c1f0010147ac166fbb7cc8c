@@ -1,0 +1,37 @@
+package com.sachin.springboot_crud.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.sachin.springboot_crud.Service.EmployeeService;
+import com.sachin.springboot_crud.model.Employee;
+
+@RestController
+@RequestMapping("/emplyees")
+public class EmployeeControler {
+
+	@Autowired
+	private EmployeeService employeeService;
+
+//	get all employees
+	@GetMapping
+	public List<Employee> getAllEmployees() {
+		return employeeService.getAllEmployees();
+
+	}
+	
+//	get employee by id
+	
+	
+
+//	 create a new employee
+	
+//	update and existing employee
+//	delete an employee
+	
+
+}

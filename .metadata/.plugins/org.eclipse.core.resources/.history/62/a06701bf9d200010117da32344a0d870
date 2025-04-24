@@ -1,0 +1,10 @@
+package dsa;
+
+public class ConvertStringToArray {
+	
+	public static void main(String[] args) {
+		String name = "Sachin";
+		
+		System.out.println(name.toCharArray());
+	}
+}

@@ -1,0 +1,5 @@
+package com.sachin.springboot_crud.Repository;
+
+public interface EmployeeRepository {
+
+}

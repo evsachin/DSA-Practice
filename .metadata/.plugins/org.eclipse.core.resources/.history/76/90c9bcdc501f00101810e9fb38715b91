@@ -1,0 +1,48 @@
+package com.sachin.springboot_crud.Service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.sachin.springboot_crud.Repository.EmployeeRepository;
+import com.sachin.springboot_crud.controller.EmployeeController;
+import com.sachin.springboot_crud.model.Employee;
+
+@Service
+public class EmployeeService {
+
+    private final EmployeeController employeeControler;
+
+    private final EmployeeRepository employeeRepository;
+
+    public EmployeeService(EmployeeRepository employeeRepository, EmployeeController employeeControler) {
+        this.employeeRepository = employeeRepository;
+        this.employeeControler = employeeControler;
+    }
+
+    public List<Employee> getAllEmployees() {
+        return employeeRepository.findAll();
+    }
+    
+    public Employee getEmployeeById(Long id) {
+    	return employeeRepository.findById(id).orElse(null);
+    }
+    
+    public Employee saveEmployee(Employee employee) {
+    	return employeeRepository.save(employee);
+    }
+    
+    public Employee updateEmployee(Long id, Employee updateEmployee) {
+    	Employee emp = employeeRepository.findById(id).orElse(null);
+    	if(emp != null) {
+    		emp.setName(updateEmployee.getName());
+    		emp.setEmail(updateEmployee.getEmail());
+    		emp.setDepartment(updateEmployee.getDepartment());
+    		return employeeRepository.save(emp);
+    	}
+    	return null;
+    }
+    public void deleteEmployee(Long id) {
+    	employeeRepository.deleteById(id);
+    }
+}

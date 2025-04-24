@@ -1,0 +1,13 @@
+package evision;
+
+public class PrintAllAlphabets {
+	public static void main(String[] args) {
+		char ch;
+		for(ch = 'a'; ch <= 'z'; ch++) {
+			System.out.print(ch+", ");
+		}
+		for(ch = 'z'; ch >= 'a'; ch--) {
+			System.out.println(ch + ", ");
+		}
+	}
+}

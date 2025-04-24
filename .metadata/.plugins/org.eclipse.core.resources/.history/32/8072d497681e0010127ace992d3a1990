@@ -1,0 +1,14 @@
+package evision;
+
+import jdk.internal.org.jline.terminal.TerminalBuilder.SystemOutput;
+
+public class SwappingOfTwoNumbers {
+	
+	int a = 3;
+	int b = 4;
+	
+	private void sysout() {
+		// TODO Auto-generated method stub
+
+	}
+}

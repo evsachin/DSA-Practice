@@ -1,0 +1,12 @@
+package com.teacher;
+
+public class TeacherInfo {
+	
+	public static void main(String[] args) {
+		
+		Stude
+	}
+	public void teachersDetails() {
+		
+	}
+}

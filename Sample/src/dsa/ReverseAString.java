@@ -1,0 +1,17 @@
+package dsa;
+
+public class ReverseAString {
+	
+	public static void main(String[] args) {
+		
+		String name = "Sachin";
+		
+		String revStr = "";
+		
+		for(int i = name.length()-1; i >= 0 ; i --) {
+			revStr += name.charAt(i);
+//			System.out.print(name.charAt(i));
+			System.out.println(revStr);
+		}
+	}
+}

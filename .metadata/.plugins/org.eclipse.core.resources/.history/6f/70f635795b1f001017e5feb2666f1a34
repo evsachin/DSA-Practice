@@ -1,0 +1,16 @@
+package com.teacher;
+
+import com.student.StudentInfo;
+
+public class TeacherInfo {
+	
+	public static void main(String[] args) {
+		
+		StudentInfo s = new StudentInfo();
+		
+		s.studentDetails();
+	}
+	public void teachersDetails() {
+		
+	}
+}
